@@ -3,46 +3,23 @@
 {% block content %}
 <div class="container-fluid mb-5">
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg shadow mb-4" style="background: linear-gradient(to bottom, #0066cc, #004aad);">
-        <div class="container-fluid">
-            <a class="navbar-brand ms-3" href="#" style="color: #ffffff;">Welcome to Customer Dashboard</a>
-            <div class="collapse navbar-collapse justify-content ms-5">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" style="color: #ffffff;">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" style="color: #ffffff;">Search</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" style="color: #ffffff;">Summary</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" style="color: #ffffff;">Logout</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
     <!-- Service Options Section -->
     <h3 class="text-center mb-4" style="color: #004aad;">Looking For</h3>
     <div class="row text-center mb-5">
         <div class="col-md-3">
-            <img src="ac_repair.png" alt="AC Repair" class="img-fluid btn" />
+            <img src="{{ url_for('static', filename='ac_repair.jpg') }}" alt="AC Repair" class="img-fluid btn" />
             <p>AC Repair</p>
         </div>
         <div class="col-md-3">
-            <img src="saloon.png" alt="Saloon" class="img-fluid btn" />
+            <img src="{{ url_for('static', filename='saloon.jpeg') }}" alt="Saloon" class="img-fluid btn" />
             <p>Saloon</p>
         </div>
         <div class="col-md-3">
-            <img src="cleaning.png" alt="Cleaning" class="img-fluid btn" />
+            <img src="{{ url_for('static', filename='cleaning.jpeg') }}" alt="Cleaning" class="img-fluid btn" />
             <p>Cleaning</p>
         </div>
         <div class="col-md-3">
-            <img src="electrician.png" alt="Electrician" class="img-fluid btn" />
+            <img src="{{ url_for('static', filename='electrician.jpeg') }}" alt="Electrician" class="img-fluid btn" />
             <p>Electrician</p>
         </div>
     </div>
