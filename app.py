@@ -10,6 +10,10 @@ def index():
 def user_login():
     return render_template('user/login.html')
 
+@app.route('/user/login/dashboard', methods=['GET'])
+def cust_dashboard():
+    return render_template('customer_dashboard.html')
+
 @app.route('/professional/login', methods=['GET'])
 def service_professional_login():
     return render_template('user/login.html')
