@@ -22,6 +22,9 @@ def admin_login():
 def user_register():
     return render_template('user/register.html')
 
+@app.route('/user/service_prof_signup', methods=['GET'])
+def service_prof_signup():
+    return render_template('user/service_prof_signup.html')
 
 if __name__ == "__main__":
     app.run(debug=True, host='0.0.0.0',port=7000) 

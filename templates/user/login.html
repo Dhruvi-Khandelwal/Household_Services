@@ -6,7 +6,9 @@
 
     <div class="card p-4 rounded shadow">
         <div class="mb-4 text-end"> 
-            <h2 class="text-primary fs-5">Login as Professional</h2>
+            <h2 class="text-primary fs-5">
+                <a href="{{ url_for('service_prof_signup') }}">Login as Professional</a>
+            </h2>
         </div>
 
         <form action="{{ url_for('user_login') }}" method="POST">
