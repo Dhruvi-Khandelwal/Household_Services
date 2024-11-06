@@ -26,6 +26,18 @@ def user_register():
 def service_prof_signup():
     return render_template('user/service_prof_signup.html')
 
+@app.route('/user/professional_dashboard', methods=['GET'])
+def professional_dashboard():
+    return render_template('user/professional_dashboard.html')
+
+@app.route('/user/professional_search', methods=['GET'])
+def professional_search():
+    return render_template('user/professional_search.html')
+
+@app.route('/user/professional_summary', methods=['GET'])
+def professional_summary():
+    return render_template('user/professional_summary.html')
+
 if __name__ == "__main__":
     app.run(debug=True, host='0.0.0.0',port=7000) 
 
