@@ -1,0 +1,94 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<div class="container my-5">
+    <h1 class="text-center text-primary">A to Z Household Services</h1>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Household Services</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Search</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Summary</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Service Options -->
+    <section class="my-4">
+        <h2 class="text-primary">Looking For</h2>
+        <div class="d-flex justify-content-around">
+            <div class="text-center">
+                <button class="btn btn-outline-primary">
+                    <img src="{{ url_for('static', filename='ac_repair.jpg') }}" alt="AC Repair" width="100"
+                        height="100">
+                    <p>AC Repair</p>
+                </button>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-outline-primary">
+                    <img src="saloon.jpg" alt="Saloon" width="100" height="100">
+                    <p>Saloon</p>
+                </button>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-outline-primary">
+                    <img src="cleaning.jpg" alt="Cleaning" width="100" height="100">
+                    <p>Cleaning</p>
+                </button>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-outline-primary">
+                    <img src="electrician.jpg" alt="Electrician" width="100" height="100">
+                    <p>Electrician</p>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service History Table -->
+    <section class="mt-5">
+        <h2 class="text-primary">Service History</h2>
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Service Name</th>
+                    <th>Professional Name</th>
+                    <th>Phone No.</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>001</td>
+                    <td>AC Repair</td>
+                    <td>Ravi Kumar</td>
+                    <td>9876543210</td>
+                    <td><button class="btn btn-danger btn-sm">Close it?</button></td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>Saloon</td>
+                    <td>Anita Shah</td>
+                    <td>9123456789</td>
+                    <td>Closed</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>Cleaning</td>
+                    <td>Rakesh Yadav</td>
+                    <td>9876512345</td>
+                    <td>Requested</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</div>
+
+{% endblock %}
