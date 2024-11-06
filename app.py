@@ -38,6 +38,18 @@ def professional_search():
 def professional_summary():
     return render_template('user/professional_summary.html')
 
+@app.route('/user/admin_dashboard', methods=['GET'])
+def admin_dashboard():
+    return render_template('user/admin_dashboard.html')
+
+@app.route('/user/admin_search', methods=['GET'])
+def admin_search():
+    return render_template('user/admin_search.html')
+
+@app.route('/user/admin_summary', methods=['GET'])
+def admin_summary():
+    return render_template('user/admin_summary.html')
+
 if __name__ == "__main__":
     app.run(debug=True, host='0.0.0.0',port=7000) 
 
