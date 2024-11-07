@@ -58,9 +58,13 @@ def admin_summary():
 def cust_search():
     return render_template('user/customer_search.html')
 
-@app.route('/user/customer_summary.html', methods=['GET'])
+@app.route('/user/customer_summary', methods=['GET'])
 def cust_summary():
     return render_template('/user/customer_summary.html')
+
+@app.route('/user/customer_remarks', methods=['GET'])
+def cust_remarks():
+    return render_template('/user/customer_remarks.html')
 
 if __name__ == "__main__":
     app.run(debug=True, host='0.0.0.0',port=7000) 
