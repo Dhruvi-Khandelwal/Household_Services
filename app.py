@@ -58,10 +58,6 @@ def admin_summary():
 def cust_search():
     return render_template('user/customer_search.html')
 
-@app.route('/user/customer_cleaningpkg', methods=['GET'])
-def cust_cleaningpkg():
-    return render_template('user/customer_cleaningpkg.html')
-
 if __name__ == "__main__":
     app.run(debug=True, host='0.0.0.0',port=7000) 
 
