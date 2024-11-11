@@ -131,7 +131,7 @@ Follow these steps to set up the project locally:
 
 ### Why this Structure is Improved:
 1. **Separation of Concerns**: The structure organizes code based on responsibilities. The `app` directory holds the core app logic, templates, and static files, while the `migrations` directory handles database migrations. This makes it easier to maintain and scale.
-2. **Modularity**: The addition of `forms.py` and `utils/` ensures that related code is grouped together, allowing for easier navigation and extensibility.
+2. **Modularity**: The related code is grouped together, allowing for easier navigation and extensibility.
 3. **Scalability**: The structure is designed to easily scale with additional features, like adding new routes, forms, and utility functions.
 4. **Maintainability**: With clear separations between models, views, templates, and static files, this structure is more maintainable as your app grows.
 
