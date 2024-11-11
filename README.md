@@ -159,18 +159,3 @@ Please ensure your code follows the project's coding standards and includes test
 
 ---
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## TODO / Roadmap
-
-- **Customer Notifications**: Implement email/SMS notifications when services are booked or updated.
-- **Advanced Admin Features**: Add analytics and reporting for admins (e.g., service usage statistics).
-- **Improved Payment Integration**: Add online payment support for booking services.
-
----
-
-Feel free to customize this as necessary based on your app's current state, new features, or specific deployment steps.
