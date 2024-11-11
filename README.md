@@ -140,7 +140,7 @@ Follow these steps to set up the project locally:
 ## Database Setup
 
 - **SQLite**: The app uses SQLite for simplicity and lightweight operation. 
-- To switch to a different database (e.g., PostgreSQL), modify the `SQLALCHEMY_DATABASE_URI` in `config.py`.
+- To switch to a different database (e.g., PostgreSQL), modify the `SQLALCHEMY_DATABASE_URI` in `app.py`.
 
 ---
 
