@@ -105,27 +105,22 @@ Follow these steps to set up the project locally:
 
 ### Detailed Breakdown:
 
-- **`app/`**: Contains the core functionality of the app, including routes, models, templates, and static files.
+- **`HOUSEHOLD_SERVICES/`**: Contains the core functionality of the app, including routes, models, templates, and static files.
   - **`__init__.py`**: Initializes the Flask app and its extensions like SQLAlchemy, Migrate, etc.
   - **`models.py`**: Contains the ORM models for users, services, and other entities.
   - **`routes.py`**: Defines the URL routes for customer, professional, and admin views, as well as other necessary views.
-  - **`forms.py`**: Contains form classes for registration, login, booking services, etc.
   - **`templates/`**: Stores HTML templates for rendering pages.
   - **`static/`**: Contains static files like CSS, JavaScript, and images, organized in respective subdirectories.
-  - **`utils/`**: A new optional folder for utility functions like custom Jinja filters, helper functions, etc.
 
-- **`migrations/`**: Contains the migration files for database schema changes.
+  - **`migrations/`**: Contains the migration files for database schema changes.
   - **`versions/`**: Folder where Alembic migration scripts are stored. This is automatically created when running `flask db migrate`.
-  
-- **`config.py`**: Stores application configuration settings such as database URIs, secret keys, and any environment-specific settings.
-  
-- **`requirements.txt`**: Lists the Python dependencies required for the project (e.g., Flask, SQLAlchemy, etc.).
-  
-- **`run.py`**: The entry point to run the Flask app. It imports the app from `app/__init__.py` and runs it.
-  
-- **`README.md`**: The project documentation, which provides an overview of the app, installation instructions, usage, and contribution guidelines.
 
-- **`LICENSE`**: The license file for the project (e.g., MIT, GPL).
+  - **`requirements.txt`**: Lists the Python dependencies required for the project (e.g., Flask, SQLAlchemy, etc.).
+  
+  - **`run.py`**: The entry point to run the Flask app. It imports the app from `app/__init__.py` and runs it.
+  
+  - **`README.md`**: The project documentation, which provides an overview of the app, installation instructions, usage, and contribution guidelines.
+
 
 ---
 
