@@ -108,7 +108,7 @@ Follow these steps to set up the project locally:
 - **`HOUSEHOLD_SERVICES/`**: Contains the core functionality of the app, including routes, models, templates, and static files.
   - **`__init__.py`**: Initializes the Flask app and its extensions like SQLAlchemy, Migrate, etc.
   - **`models.py`**: Contains the ORM models for users, services, and other entities.
-  - **`routes.py`**: Defines the URL routes for customer, professional, and admin views, as well as other necessary views.
+  - **`app.py`**: Defines the URL routes for customer, professional, and admin views, as well as other necessary views.
   - **`templates/`**: Stores HTML templates for rendering pages.
   - **`static/`**: Contains static files like CSS, JavaScript, and images, organized in respective subdirectories.
 
