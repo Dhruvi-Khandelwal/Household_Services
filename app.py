@@ -66,6 +66,14 @@ def cust_summary():
 def cust_remarks():
     return render_template('/user/customer_remarks.html')
 
+@app.route('/user/admin_profile', methods=['GET'])
+def admin_profile():
+    return render_template('/user/admin_profile.html')
+
+@app.route('/user/customer_profile', methods=['GET'])
+def cust_profile():
+    return render_template('/user/customer_profile.html')
+
 if __name__ == "__main__":
     app.run(debug=True, host='0.0.0.0',port=7000) 
 
